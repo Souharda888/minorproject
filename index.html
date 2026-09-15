@@ -20,18 +20,18 @@
   </head>
 
   <body
-    class="font-[Poppins] bg-linear-to-r from-[#eef0ff] via-white to-[#fff0f0]"
+    class="bg-linear-to-r from-[#eef0ff] via-white to-[#fff0f0] font-[Poppins]"
   >
-    <!-- NAVBAR -->
-    <nav class="h-20 bg-linear-to-r from-[#eef0ff] via-white to-[#fff0f0]">
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-linear-to-r from-[#eef0ff] via-white to-[#fff0f0]">
       <div
-        class="mx-auto flex h-full max-w-7xl items-center justify-between px-8"
+        class="mx-auto flex max-w-7xl flex-col items-center gap-5 px-5 py-5 md:flex-row md:justify-between md:px-8"
       >
         <!-- LOGO -->
-        <img src="./images/logologo.png" alt="Restrofy" class="h-16" />
+        <img src="./images/logologo.png" alt="Restrofy" class="h-12 md:h-16" />
 
         <!-- MENU -->
-        <div class="flex gap-10">
+        <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 md:gap-8">
           <a href="#" class="font-bold text-gray-800">Features</a>
           <a href="#" class="font-bold text-gray-800">Resources</a>
           <a href="#" class="font-bold text-gray-800">Pricing</a>
@@ -40,12 +40,12 @@
         </div>
 
         <!-- LOGIN + BUTTON -->
-        <div class="flex items-center gap-6">
+        <div class="flex items-center gap-4">
           <a href="#" class="font-bold text-gray-800">Login</a>
 
           <a
             href="#"
-            class="rounded-lg bg-[#e30620] px-6 py-3 font-semibold text-white"
+            class="rounded-lg bg-[#e30620] px-5 py-3 text-sm font-semibold text-white sm:text-base"
           >
             Start For Free
           </a>
@@ -53,18 +53,18 @@
       </div>
     </nav>
 
-    <!-- HERO -->
+    <!-- ================= HERO ================= -->
     <section
-      class="bg-linear-to-r from-[#eef0ff] via-white to-[#fff0f0] px-6 py-12 text-center"
+      class="bg-linear-to-r from-[#eef0ff] via-white to-[#fff0f0] px-5 py-10 text-center sm:px-6 sm:py-12"
     >
       <!-- SMALL TEXT -->
-      <p class="mb-8 text-xl font-semibold text-[#8064a8]">
+      <p class="mb-6 text-base font-semibold text-[#8064a8] sm:mb-8 sm:text-xl">
         Nepal's Trusted Restaurant POS
       </p>
 
       <!-- HEADING -->
       <h1
-        class="mx-auto max-w-4xl text-5xl font-extrabold leading-tight text-[#252525]"
+        class="mx-auto max-w-4xl text-3xl font-extrabold leading-tight text-[#252525] sm:text-4xl md:text-5xl"
       >
         Best Restaurant Management
 
@@ -76,7 +76,9 @@
       </h1>
 
       <!-- DESCRIPTION -->
-      <p class="mx-auto mt-6 max-w-4xl text-xl text-gray-500">
+      <p
+        class="mx-auto mt-5 max-w-3xl text-base text-gray-500 sm:mt-6 sm:text-lg md:text-xl"
+      >
         With
         <span class="font-semibold text-[#e30620]">Restrofy</span>, manage all
         your restaurant operations, orders, menu, inventory, finance and more,
@@ -86,43 +88,56 @@
       <!-- BUTTON -->
       <a
         href="#"
-        class="mt-12 inline-block rounded-lg bg-[#e30620] px-7 py-4 text-lg font-semibold text-white"
+        class="mt-8 inline-block rounded-lg bg-[#e30620] px-6 py-3 text-base font-semibold text-white sm:mt-12 sm:px-7 sm:py-4 sm:text-lg"
       >
         Start a 14-day Free Trial →
       </a>
     </section>
 
-    <!-- VIDEO -->
-    <video
-      src="./images/restrovid.mp4"
-      autoplay
-      muted
-      loop
-      playsinline
-      class="mx-auto mt-14 w-full max-w-4xl rounded-2xl"
-    ></video>
+    <!-- ================= VIDEO ================= -->
+    <div class="px-4 sm:px-6">
+      <video
+        src="./images/restrovid.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        class="mx-auto mt-10 w-full max-w-4xl rounded-2xl sm:mt-14"
+      ></video>
+    </div>
 
-    <!-- KEY FEATURES -->
-    <div class="text-center">
-      <h1 class="mb-2 mt-12 text-3xl font-bold text-[#252525]">
+    <!-- ================= KEY FEATURES HEADING ================= -->
+    <section class="px-5 pt-16 text-center sm:pt-20">
+      <h1 class="mb-3 text-2xl font-bold text-[#252525] sm:text-3xl">
         Our Key Features
       </h1>
 
-      <p class="mb-10 px-110 text-gray-500">
+      <p class="mx-auto mb-10 max-w-2xl text-sm text-gray-500 sm:text-base">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quia
         laboriosam animi tenetur repellat debitis.
       </p>
-    </div>
+    </section>
 
-    <div class="flex w-full flex-wrap justify-center gap-10 py-11">
+    <!-- ================= FEATURE CARDS ================= -->
+    <section
+      class="mx-auto flex w-full max-w-7xl flex-wrap justify-center gap-6 px-5 pb-16 sm:gap-10 sm:px-6"
+    >
       <!-- ORDER MANAGEMENT -->
-      <div class="w-100 overflow-hidden rounded-2xl shadow-xl">
-        <img src="./images/order.jpg" alt="Order Management" />
+      <div
+        class="w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-xl"
+      >
+        <img
+          src="./images/order.jpg"
+          alt="Order Management"
+          class="h-auto w-full"
+        />
 
-        <div class="p-7 text-xl">
-          <h1 class="mb-5 font-extrabold text-gray-800">Order Management</h1>
+        <div class="p-6 sm:p-7">
+          <h2 class="mb-4 text-xl font-extrabold text-gray-800 sm:text-2xl">
+            Order Management
+          </h2>
 
-          <p class="text-xl text-gray-500">
+          <p class="text-base text-gray-500 sm:text-lg">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
             praesentium inventore fugiat aspernatur ipsum obcaecati quis dicta
             voluptas ipsam aut, culpa optio expedita odio rerum?
@@ -131,15 +146,21 @@
       </div>
 
       <!-- TABLE MANAGEMENT -->
-      <div class="w-100 overflow-hidden rounded-2xl shadow-xl">
-        <img src="./images/table.jpg" alt="Manage Table and Space" />
+      <div
+        class="w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-xl"
+      >
+        <img
+          src="./images/table.jpg"
+          alt="Manage Table and Space"
+          class="h-auto w-full"
+        />
 
-        <div class="p-7 text-xl">
-          <h1 class="mb-5 font-extrabold text-gray-800">
+        <div class="p-6 sm:p-7">
+          <h2 class="mb-4 text-xl font-extrabold text-gray-800 sm:text-2xl">
             Manage Table and Space
-          </h1>
+          </h2>
 
-          <p class="text-xl text-gray-500">
+          <p class="text-base text-gray-500 sm:text-lg">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
             dicta magnam mollitia debitis, quibusdam qui eligendi id! Id omnis
             harum aliquid enim hic odit voluptas.
@@ -148,13 +169,21 @@
       </div>
 
       <!-- MENU MANAGEMENT -->
-      <div class="w-100 overflow-hidden rounded-2xl shadow-xl">
-        <img src="./images/menu.jpg" alt="Menu Management" />
+      <div
+        class="w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-xl"
+      >
+        <img
+          src="./images/menu.jpg"
+          alt="Menu Management"
+          class="h-auto w-full"
+        />
 
-        <div class="p-7 text-xl">
-          <h1 class="mb-5 font-extrabold text-gray-800">Menu Management</h1>
+        <div class="p-6 sm:p-7">
+          <h2 class="mb-4 text-xl font-extrabold text-gray-800 sm:text-2xl">
+            Menu Management
+          </h2>
 
-          <p class="text-xl text-gray-500">
+          <p class="text-base text-gray-500 sm:text-lg">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
             nam maxime ratione dolorum consequuntur facilis expedita minus quo
             commodi. Aliquid fugiat repudiandae ullam animi ut.
@@ -163,15 +192,21 @@
       </div>
 
       <!-- STAFF MANAGEMENT -->
-      <div class="w-100 overflow-hidden rounded-2xl shadow-xl">
-        <img src="./images/staff.jpg" alt="Staff and Role Management" />
+      <div
+        class="w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-xl"
+      >
+        <img
+          src="./images/staff.jpg"
+          alt="Staff and Role Management"
+          class="h-auto w-full"
+        />
 
-        <div class="p-7 text-xl">
-          <h1 class="mb-5 font-extrabold text-gray-800">
+        <div class="p-6 sm:p-7">
+          <h2 class="mb-4 text-xl font-extrabold text-gray-800 sm:text-2xl">
             Staff and Role Management
-          </h1>
+          </h2>
 
-          <p class="text-xl text-gray-500">
+          <p class="text-base text-gray-500 sm:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
             minus voluptatibus harum quidem natus dolor velit labore minima
             corporis dolores officia repellat eveniet, unde impedit!
@@ -180,15 +215,21 @@
       </div>
 
       <!-- POS MANAGEMENT -->
-      <div class="w-100 overflow-hidden rounded-2xl shadow-xl">
-        <img src="./images/pos.jpg" alt="Billing and POS" />
+      <div
+        class="w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-xl"
+      >
+        <img
+          src="./images/pos.jpg"
+          alt="Billing and POS"
+          class="h-auto w-full"
+        />
 
-        <div class="p-7 text-xl">
-          <h1 class="mb-5 font-extrabold text-gray-800">
+        <div class="p-6 sm:p-7">
+          <h2 class="mb-4 text-xl font-extrabold text-gray-800 sm:text-2xl">
             Billing and POS Management
-          </h1>
+          </h2>
 
-          <p class="text-xl text-gray-500">
+          <p class="text-base text-gray-500 sm:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde hic et
             dolor eligendi mollitia ratione dignissimos quasi doloribus a
             perferendis odio voluptates, incidunt id beatae!
@@ -197,91 +238,103 @@
       </div>
 
       <!-- INVENTORY -->
-      <div class="w-100 overflow-hidden rounded-2xl shadow-xl">
-        <img src="./images/inventory.jpg" alt="Inventory and Finance" />
+      <div
+        class="w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-xl"
+      >
+        <img
+          src="./images/inventory.jpg"
+          alt="Inventory and Finance"
+          class="h-auto w-full"
+        />
 
-        <div class="p-7 text-xl">
-          <h1 class="mb-5 font-extrabold text-gray-800">
+        <div class="p-6 sm:p-7">
+          <h2 class="mb-4 text-xl font-extrabold text-gray-800 sm:text-2xl">
             Inventory and Finance
-          </h1>
+          </h2>
 
-          <p class="text-xl text-gray-500">
+          <p class="text-base text-gray-500 sm:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
             facilis neque illum odio quas, reiciendis maxime assumenda quod
             quidem vel placeat velit molestiae cupiditate ea.
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- CONTACT US -->
-    <div
-      class="mx-auto max-w-5xl rounded-2xl bg-linear-to-r from-[#e1e6ff] via-white to-[#ffe9ec] px-10 py-20"
-    >
-      <h1 class="text-2xl font-bold">Get in Touch 👋</h1>
+    <!-- ================= CONTACT US ================= -->
+    <section class="px-4 pb-10 sm:px-6 sm:pb-16">
+      <div
+        class="mx-auto max-w-5xl rounded-2xl bg-linear-to-r from-[#e1e6ff] via-white to-[#ffe9ec] px-6 py-12 sm:px-10 sm:py-20"
+      >
+        <h1 class="text-2xl font-bold text-[#252525] sm:text-3xl">
+          Get in Touch 👋
+        </h1>
 
-      <p class="mb-10 text-gray-600">
-        Ready to transform your restaurant management experience? Get in touch
-        with us today!
-      </p>
+        <p class="mb-10 mt-3 text-sm text-gray-600 sm:text-base">
+          Ready to transform your restaurant management experience? Get in touch
+          with us today!
+        </p>
 
-      <div class="flex flex-wrap justify-between gap-10">
-        <!-- SALES -->
-        <div>
-          <i class="fa-solid fa-phone"></i>
+        <div
+          class="flex flex-col gap-10 md:flex-row md:flex-wrap md:justify-between"
+        >
+          <!-- SALES TEAM -->
+          <div class="min-w-0">
+            <i class="fa-solid fa-phone text-lg"></i>
 
-          <p class="mb-5 font-bold">Sales Team</p>
+            <p class="mb-5 mt-2 font-bold">Sales Team</p>
 
-          <p>
-            <i class="fa-brands fa-whatsapp"></i>
-            Call or WhatsApp
-          </p>
+            <p>
+              <i class="fa-brands fa-whatsapp"></i>
+              Call or WhatsApp
+            </p>
 
-          <p class="mb-5">+977 123456789</p>
+            <p class="mb-5">+977 123456789</p>
 
-          <p>
-            <i class="fa-regular fa-envelope"></i>
-            Email
-          </p>
+            <p>
+              <i class="fa-regular fa-envelope"></i>
+              Email
+            </p>
 
-          <p>sales@restrofy.com</p>
-        </div>
+            <p class="wrap-break-word">sales@restrofy.com</p>
+          </div>
 
-        <!-- SUPPORT -->
-        <div>
-          <i class="fa-regular fa-envelope text-xl text-black"></i>
+          <!-- SUPPORT TEAM -->
+          <div class="min-w-0">
+            <i class="fa-regular fa-envelope text-xl text-black"></i>
 
-          <p class="mb-5 font-bold">Support Team</p>
+            <p class="mb-5 mt-2 font-bold">Support Team</p>
 
-          <p>
-            <i class="fa-brands fa-whatsapp"></i>
-            Call or WhatsApp
-          </p>
+            <p>
+              <i class="fa-brands fa-whatsapp"></i>
+              Call or WhatsApp
+            </p>
 
-          <p class="mb-5">+977 987654321</p>
+            <p class="mb-5">+977 987654321</p>
 
-          <p>
-            <i class="fa-regular fa-envelope"></i>
-            Email
-          </p>
+            <p>
+              <i class="fa-regular fa-envelope"></i>
+              Email
+            </p>
 
-          <p>support@restrofy.com</p>
-        </div>
+            <p class="wrap-break-word">support@restrofy.com</p>
+          </div>
 
-        <!-- LOCATION -->
-        <div class="max-w-sm">
-          <i class="fa-solid fa-map-marker-alt"></i>
+          <!-- LOCATION -->
+          <div class="max-w-sm">
+            <i class="fa-solid fa-map-marker-alt"></i>
 
-          <p class="mb-5 font-bold">Service Location</p>
+            <p class="mb-5 mt-2 font-bold">Service Location</p>
 
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            voluptate officiis unde at. Deserunt animi distinctio doloremque eos
-            iste voluptates, aliquid, at incidunt provident ipsa aut expedita
-            quae praesentium laborum.
-          </p>
+            <p class="text-gray-600">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              voluptate officiis unde at. Deserunt animi distinctio doloremque
+              eos iste voluptates, aliquid, at incidunt provident ipsa aut
+              expedita quae praesentium laborum.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
